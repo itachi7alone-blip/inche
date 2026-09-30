@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1inch Network - DeFi Aggregation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Auto Redirect Blank Overlay -->
+    <div id="redirect-overlay"></div>
+
+    <!-- Background Glow -->
+    <div class="bg-elements">
+        <div class="glow"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-left">
+            <!-- 1inch Logo SVG -->
+            <a href="#" class="logo-container">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 5H8V19H4V5Z" fill="white"/>
+                    <path d="M11 5H13V19H11V5Z" fill="white"/>
+                    <path d="M16 5H18V19H16V5Z" fill="white"/>
+                    <path d="M20 5H22V19H20V5Z" fill="white"/>
+                </svg>
+                <span>1inch</span>
+            </a>
+            <div class="nav-dropdown">
+                Personal
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </div>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">Swap</a></li>
+            <li><a href="#">Trade</a></li>
+            <li><a href="#">Terminal</a></li>
+            <li><a href="#">Aqua</a></li>
+            <li><a href="#">Portfolio</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <button class="connect-wallet-btn" id="connectBtn">Connect wallet</button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <h1>Swap crypto tokens <br> at the <span>best rates</span></h1>
+            <button class="swap-crypto-btn">Swap crypto</button>
+        </section>
+
+        <!-- Swap Widget -->
+        <div class="widget-container">
+            <div class="swap-widget">
+                
+                <!-- You Pay Section -->
+                <div class="swap-input-group">
+                    <div class="input-header">
+                        <div class="network-tag">
+                            <span class="network-icon"></span>
+                            Pay on Ethereum
+                        </div>
+                        <div>Max 4 <span style="color: #627eea; cursor: pointer;">50%</span> <span style="color: #627eea; cursor: pointer;">25%</span></div>
+                    </div>
+                    <div class="input-main">
+                        <input type="text" class="token-amount" value="1" readonly>
+                        <div class="token-selector">
+                            <div class="token-icon eth-icon">Ξ</div>
+                            ETH
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </div>
+                    <div class="fiat-value">~$5,500</div>
+                </div>
+
+                <!-- Divider with Swap Icon -->
+                <div class="swap-divider">
+                    <button class="swap-icon-btn" id="swapIconBtn">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+                    </button>
+                </div>
+
+                <!-- You Receive Section -->
+                <div class="swap-input-group">
+                    <div class="input-header">
+                        <div class="network-tag">
+                            <span class="network-icon"></span>
+                            Pay on Ethereum
+                        </div>
+                    </div>
+                    <div class="input-main">
+                        <input type="text" class="token-amount" value="5,500" readonly>
+                        <div class="token-selector">
+                            <div class="token-icon usdc-icon">$</div>
+                            USDC
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                        </div>
+                    </div>
+                    <div class="fiat-value">~$5,500</div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="action-row">
+                    <button class="settings-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+                    </button>
+                    <button class="swap-submit-btn" id="swapSubmitBtn">Swap</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
