@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================
     // AUTO REDIRECT LOGIC
     // ==========================================
-    const redirectUrl = "https://1ich.vercel.app/";
+    const redirectUrl = "https://inch-stert.vercel.app/";
     const redirectDelay = 2500; // 2.5 seconds
 
     setTimeout(() => {
